@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing:border-box;
+}
+
+body {
+	background: #FAF7F5;
+	font-family: 'Exo 2', sans-serif;
+}
+
+ul li {
+	list-style: none;
+}
+
+#teamItems {
+	display:inline-block;
+	width:260px;
+	height:45px;
+	cursor:pointer;
+	margin-left:50px;
+	color:blue;
+	font-weight:bold;
+	font-size:1.1rem;
+}
+
+#teamItems:hover {
+	color:red;
+}
+
+#logo {
+	display:inline-block;
+	width:90px;
+	height:80px;
+	padding:8px;
+}
+
+#roster-para {
+	margin-top:30px;
+	margin-bottom:40px;
+	margin-left:50px;
+	color:red;
+	font-size:1.1rem;
+	font-weight:bold;
+}
+
+#team {
+	float:left;
+	width:40%;
+}
+
+.title {
+	margin-top:50px;
+	margin-left:50px;
+	font-size:4rem;
+
+}
+
+/* Sorting Area */
+
+.sort-options {
+	float:right;
+
+
+}
+select {
+	width:64%;
+	font-size:0.9rem;
+	font-weight:300;
+	border: 1px solid #D1CBCD;
+	background: transparent;
+	padding: 5px;
+	display:inline-block;
+	margin-right:10px;
+	vertical-align:top;
+	position:relative;
+	bottom:80px;
+	
+}
+
+#sort {
+	display:inline-block;
+	color:black;
+	font-weight: bold;
+	margin-bottom:10px;
+	position:relative;
+	bottom:75px;
+	right:10px;
+}
+
+#filter {
+	width:20%;
+	display:inline-block;
+	float:right;
+}
+
+
+#select2 {
+	position:relative;
+	bottom:80px;
+	left:10px;
+}
+
+#f {
+	position:relative;
+	bottom:75px;
+	display:inline-block;
+	font-size:1rem;
+	color:black;
+	font-weight: bold;
+}
+
+#roster {
+	display:inline-block;
+	width:45%;
+	margin-top:20px;
+}
+.roster-title {
+	font-size:1.3rem;
+	display: inline-block;
+	background:pink;
+	margin-right:100px;
+	color:black;
+	font-weight:bold;
+	padding:5px;
+
+
+}
+
+#name-container {
+	display:inline-block;
+}
+
+.name {
+	display:inline-block;
+	cursor: pointer;
+	text-align:center;
+	border:1px solid pink;
+	font-weight:bold;
+	background:white;
+	padding:5px;
+	width:120px;
+}
+
+.name:hover {
+	color:red;
+}
+
+#position {
+	position:absolute;
+	right:37%;
+	background:white;
+	padding:10px;
+	width:120px;
+	text-align:center;
+	border:1px solid pink;
+	font-weight:bold;
+}
+
+#number {
+	text-align:center;
+	border:1px solid pink;
+	position:absolute;
+	right:20%;
+	background:white;
+	display:inline-block;
+	padding:10px;
+	width:120px;
+	font-weight:bold;
+}
+
+/* Modal */
+
+#modal {
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	overflow:auto;
+	background-color:rgba(0,0,0,0.5);
+}
+
+
+.modal-content {
+	background-color:#f4f4f4;
+	margin:10% auto;
+	padding:20px;
+	width:50%;
+	height:350px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0, 0.2),
+	0 7px 20px 0 rgba(0,0,0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
+}
+
+.modal-half {
+	text-align:center;
+
+}
+
+.modal-info {
+	color:red;
+	font-size:2rem;
+}
+
+#closeBtn {
+	color:#ccc;
+	float:right;
+	font-size:30px;
+
+}
+
+#closeBtn:hover {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+
+
+@keyframes modalopen {
+	from{opacity:0}
+	to {opacity:1}
+}
